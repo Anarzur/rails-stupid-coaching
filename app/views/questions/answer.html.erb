@@ -1,0 +1,28 @@
+
+<div class="m-4">
+<div row>
+<div col>
+      <div>
+        <h1>Stupid Coach</h1>
+      </div>
+
+      <div class= "p-1">
+        <p><%= @question %></p>
+        <i><p>-You</p></i>
+      </div>
+
+      <div class="bg-warning bg-opacity-10 p-1" >
+        <% if @response == "Great!" %>
+        <strong><%= @response %></strong>
+        <% else %>
+        <p><%= @response %></p>
+        <% end %>
+        <i><p>-Your coach</p></i>
+      </div>
+
+      <div>
+        <%= link_to "Ask a new question", "ask" %>
+      </div>
+</div>
+</div>
+</div>
